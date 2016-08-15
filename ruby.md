@@ -10,6 +10,7 @@ When a lambda returns it passes controll back to the calling method, when a proc
     #lambda
     my_lambda = lambda { |parameter| puts "Do Stuff!!" }
     ```
+    
 - **Proc**
     ```ruby
     #proc
