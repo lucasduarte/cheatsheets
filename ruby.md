@@ -29,11 +29,11 @@ When a lambda returns it passes controll back to the calling method, when a proc
     ```
 
 ## Classes
- ### How 'super' handles arguments when called
- - Called with no argument list (empty or otherwise), super automatically forwards the arguments that were passed to the method from which it’s called.
- - Called with an empty argument list—super()—it sends no arguments to the
+### How 'super' handles arguments when called
+- Called with no argument list (empty or otherwise), super automatically forwards the arguments that were passed to the method from which it’s called.
+- Called with an empty argument list—super()—it sends no arguments to the
 higher-up method, even if arguments were passed to the current method.
- - Called with specific arguments—super(a,b,c)—it sends exactly those
+- Called with specific arguments—super(a,b,c)—it sends exactly those
 arguments.
 
 ## Implementations of Built in functions
@@ -51,7 +51,7 @@ end
 ```
 
 ### "each" function from Array class
-```
+```ruby
 class Array
   def my_each
     i = 0
