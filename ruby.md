@@ -27,6 +27,7 @@ When a lambda returns it passes controll back to the calling method, when a proc
     double_lambda = lambda { |n| n * 2 }
     arr.map(&double_lambda)
     ```
+
 ## Classes
  ### How 'super' handles arguments when called
  - Called with no argument list (empty or otherwise), super automatically forwards the arguments that were passed to the method from which it’s called.
@@ -34,4 +35,17 @@ When a lambda returns it passes controll back to the calling method, when a proc
 higher-up method, even if arguments were passed to the current method.
  - Called with specific arguments—super(a,b,c)—it sends exactly those
 arguments.
- 
+
+## Implementations of Built in functions
+
+### "times" function
+```ruby
+class Integer
+  def my_times
+    (0..self).each do |n|
+      yield(n)
+    end
+    self
+  end
+end  
+```
