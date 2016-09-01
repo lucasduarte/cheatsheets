@@ -38,7 +38,7 @@ arguments.
 
 ## Implementations of Built in functions
 
-### "times" function
+### "times" function from Integer class
 ```ruby
 class Integer
   def my_times
@@ -48,4 +48,18 @@ class Integer
     self
   end
 end  
+```
+
+### "each" function from Array class
+```
+class Array
+  def my_each
+    i = 0
+    until i == self.length
+      yield(self[i])
+      i += 1
+    end
+    self
+  end    
+end
 ```
